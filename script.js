@@ -36,6 +36,7 @@ document
         }),
       };
       history.push(data);
+      getHistory("all-call-button");
     }
   });
 // handle polic-call alert
@@ -63,6 +64,7 @@ document
         }),
       };
       history.push(data);
+      getHistory("police-call-button");
     }
   });
 // handle Fire-call alert
@@ -90,6 +92,7 @@ document
         }),
       };
       history.push(data);
+      getHistory("fire-call-button");
     }
   });
 // handle ambulance-call alert
@@ -117,6 +120,7 @@ document
         }),
       };
       history.push(data);
+      getHistory("ambulance-call-button");
     }
   });
 // handle Women n child-call alert
@@ -144,6 +148,7 @@ document
         }),
       };
       history.push(data);
+      getHistory("women-call-button");
     }
   });
 // handle corruption-call alert
@@ -171,6 +176,7 @@ document
         }),
       };
       history.push(data);
+      getHistory("cor-call-button");
     }
   });
 // handle Electricity-call alert
@@ -198,6 +204,7 @@ document
         }),
       };
       history.push(data);
+      getHistory("electricity-call-button");
     }
   });
 // handle brac-call alert
@@ -225,6 +232,7 @@ document
         }),
       };
       history.push(data);
+      getHistory("brac-call-button");
     }
   });
 // handle railway-call alert
@@ -252,5 +260,35 @@ document
         }),
       };
       history.push(data);
+      getHistory("railway-call-button");
     }
   });
+
+// history list
+function getHistory(id) {
+  const historyContainer = document.getElementById("history-container");
+  historyContainer.innerText = "";
+  for (const data of history) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+      <div
+              class="bg-[#f4f5f7] rounded-xl px-1 py-3 flex justify-between items-center mt-3"
+            >
+              <div class="flex items-center">
+                <div class="ml-3">
+                  <h1>${data.name}</h1>
+                  <p>${data.nmbr}</p>
+                </div>
+              </div>
+              <p>${data.date}</p>
+            </div>
+    `;
+    historyContainer.appendChild(div);
+  }
+}
+
+// clear history
+document.getElementById("clear-btn").addEventListener("click", function () {
+  document.getElementById("history-container").innerHTML = "";
+  history.length = 0;
+});
