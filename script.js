@@ -292,3 +292,160 @@ document.getElementById("clear-btn").addEventListener("click", function () {
   document.getElementById("history-container").innerHTML = "";
   history.length = 0;
 });
+
+
+// copy button er kaj 
+
+// card1
+document.querySelector('#card1 .copy-btn').addEventListener('click', () => {
+    let copyCount = parseInt(document.getElementById('copy-count').innerText);
+    copyCount++;
+    document.getElementById('copy-count').innerText = copyCount;
+    // Select the text you want to copy
+    const textToCopy = document.querySelector('#card1 .card-number').innerText;
+
+    // Use navigator.clipboard API to copy text
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert(`Copied: ${textToCopy}`);
+        })
+        .catch(err => {
+            console.error('Failed to copy!', err);
+        });
+});
+// card2
+document.querySelector('#card2 .copy-btn').addEventListener('click', () => {
+    let copyCount = parseInt(document.getElementById('copy-count').innerText);
+    copyCount++;
+    document.getElementById('copy-count').innerText = copyCount;
+    // Select the text you want to copy
+    const textToCopy = document.querySelector('#card2 .card-number').innerText;
+
+    // Use navigator.clipboard API to copy text
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert(`Copied: ${textToCopy}`);
+        })
+        .catch(err => {
+            console.error('Failed to copy!', err);
+        });
+});
+// card3
+document.querySelector('#card3 .copy-btn').addEventListener('click', () => {
+    let copyCount = parseInt(document.getElementById('copy-count').innerText);
+    copyCount++;
+    document.getElementById('copy-count').innerText = copyCount;
+    // Select the text you want to copy
+    const textToCopy = document.querySelector('#card3 .card-number').innerText;
+
+    // Use navigator.clipboard API to copy text
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert(`Copied: ${textToCopy}`);
+        })
+        .catch(err => {
+            console.error('Failed to copy!', err);
+        });
+});
+// card4
+document.querySelector('#card4 .copy-btn').addEventListener('click', () => {
+    let copyCount = parseInt(document.getElementById('copy-count').innerText);
+    copyCount++;
+    document.getElementById('copy-count').innerText = copyCount;
+    // Select the text you want to copy
+    const textToCopy = document.querySelector('#card4 .card-number').innerText;
+
+    // Use navigator.clipboard API to copy text
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert(`Copied: ${textToCopy}`);
+        })
+        .catch(err => {
+            console.error('Failed to copy!', err);
+        });
+});
+// card5
+document.querySelector('#card5 .copy-btn').addEventListener('click', () => {
+    let copyCount = parseInt(document.getElementById('copy-count').innerText);
+    copyCount++;
+    document.getElementById('copy-count').innerText = copyCount;
+    // Select the text you want to copy
+    const textToCopy = document.querySelector('#card5 .card-number').innerText;
+
+    // Use navigator.clipboard API to copy text
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert(`Copied: ${textToCopy}`);
+        })
+        .catch(err => {
+            console.error('Failed to copy!', err);
+        });
+});
+// card6
+document.querySelector('#card6 .copy-btn').addEventListener('click', () => {
+    let copyCount = parseInt(document.getElementById('copy-count').innerText);
+    copyCount++;
+    document.getElementById('copy-count').innerText = copyCount;
+    // Select the text you want to copy
+    const textToCopy = document.querySelector('#card6 .card-number').innerText;
+
+    // Use navigator.clipboard API to copy text
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert(`Copied: ${textToCopy}`);
+        })
+        .catch(err => {
+            console.error('Failed to copy!', err);
+        });
+});
+// card7
+document.querySelector('#card7 .copy-btn').addEventListener('click', () => {
+    let copyCount = parseInt(document.getElementById('copy-count').innerText);
+    copyCount++;
+    document.getElementById('copy-count').innerText = copyCount;
+    // Select the text you want to copy
+    const textToCopy = document.querySelector('#card7 .card-number').innerText;
+
+    // Use navigator.clipboard API to copy text
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert(`Copied: ${textToCopy}`);
+        })
+        .catch(err => {
+            console.error('Failed to copy!', err);
+        });
+});
+// card8
+document.querySelector('#card8 .copy-btn').addEventListener('click', () => {
+    let copyCount = parseInt(document.getElementById('copy-count').innerText);
+    copyCount++;
+    document.getElementById('copy-count').innerText = copyCount;
+    // Select the text you want to copy
+    const textToCopy = document.querySelector('#card8 .card-number').innerText;
+
+    // Use navigator.clipboard API to copy text
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert(`Copied: ${textToCopy}`);
+        })
+        .catch(err => {
+            console.error('Failed to copy!', err);
+        });
+});
+// card9
+document.querySelector('#card9 .copy-btn').addEventListener('click', () => {
+    let copyCount = parseInt(document.getElementById('copy-count').innerText);
+    copyCount++;
+    document.getElementById('copy-count').innerText = copyCount;
+    // Select the text you want to copy
+    const textToCopy = document.querySelector('#card9 .card-number').innerText;
+
+    // Use navigator.clipboard API to copy text
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert(`Copied: ${textToCopy}`);
+        })
+        .catch(err => {
+            console.error('Failed to copy!', err);
+        });
+});
