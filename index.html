@@ -72,9 +72,11 @@
         </p>
       </div>
     </section>
-    <section class="bg-[#f5fff6] w-full">
+    <section
+      class="bg-[#f5fff6] w-full flex flex-col lg:flex-row justify-around"
+    >
       <div
-        class="md:p-6 grid sm:grid-cols-1 md:grid-cols-4 gap-2 mx-auto py-10"
+        class="md:p-6 grid sm:grid-cols-1 md:grid-cols-3 gap-2 mx-auto py-10 w-9/12"
       >
         <div
           id="card1"
@@ -183,23 +185,6 @@
               <p class="">Call</p>
             </button>
           </div>
-        </div>
-        <div
-          class="sm:w-full md:w-[350px] bg-white rounded-xl p-[10px] drop-shadow-lg row-span-3"
-        >
-          <div class="flex justify-between items-center">
-            <div class="flex items-center gap-1">
-              <i class="fa-solid fa-clock-rotate-left"></i>
-              <h2 class="font-semibold text-lg">Call History</h2>
-            </div>
-            <button
-              id="clear-btn"
-              class="bg-[#00A63E] px-5 py-2 font-semibold text-white rounded-full"
-            >
-              Clear
-            </button>
-          </div>
-          <div id="history-container"></div>
         </div>
         <div
           id="card4"
@@ -424,6 +409,25 @@
               <p class="">Call</p>
             </button>
           </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-3/12 md:my-6 mr-5 row-span-3">
+        <div
+          class="bg-white rounded-xl p-[10px] drop-shadow-lg min-h-[500px] lg:h-full"
+        >
+          <div class="flex justify-between items-center">
+            <div class="flex items-center gap-1">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <h2 class="font-semibold text-lg">Call History</h2>
+            </div>
+            <button
+              id="clear-btn"
+              class="bg-[#00A63E] px-5 py-2 font-semibold text-white rounded-full"
+            >
+              Clear
+            </button>
+          </div>
+          <div id="history-container"></div>
         </div>
       </div>
     </section>
